@@ -1,0 +1,34 @@
+.nav-item.nav-link {
+    margin: 10px;
+    padding: 10px;
+}
+
+.flex-child.left-menu{
+    width:15%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: -0.8;
+    width: 100%;
+    border: 5px solid rgb(7, 7, 3);
+    margin: 1em;
+    padding: 1em;
+} 
+
+.flex-child:first-child {
+    margin-right: 20px;
+    
+} 
+
+.navbar-nav.flex-child {
+    width: 10px;
+}
+
+.nav-item.verti {
+    font-style: italic;
+}
+

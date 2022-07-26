@@ -1,0 +1,12 @@
+<div class="flex-container" >
+    <div *ngIf="sourceBtn===enumBtn; else notAllRecords" >
+        <div id="photos" *ngFor="let photo of photos" (click)="getAlbumById(photo.albumId)" class="flex-child-photo need-curser">
+            <img src="{{photo.thumbnailUrl}}" />
+        </div> 
+    </div>
+    <ng-template #notAllRecords>
+        <div id="photos" *ngFor="let photo of photos | slice:0:maxRowPerPage;" (click)="getAlbumById(photo.albumId)" class="flex-child-photo need-curser">
+            <img src="{{photo.thumbnailUrl}}" />
+        </div> 
+    </ng-template>
+</div>

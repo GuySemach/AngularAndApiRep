@@ -1,0 +1,21 @@
+<table >
+    <tr>
+        <th>user id</th>
+        <th>title</th>
+        <th>body</th>
+    </tr>
+    <div *ngIf="sourceBtn===enumBtn; else notAllRecords" >
+    <tr *ngFor="let post of posts;" id="{{post.id.toString()}}">
+        <td>{{ post.userId.toString() }}</td>
+        <td>{{ post.title }}</td>
+        <td>{{ post.body }}</td>
+    </tr>
+    </div>
+    <ng-template #notAllRecords>
+        <tr *ngFor="let post of posts | slice:0:maxRowPerPage;" id="{{post.id.toString()}}">
+            <td>{{ post.userId.toString() }}</td>
+            <td>{{ post.title }}</td>
+            <td>{{ post.body }}</td>
+        </tr>
+    </ng-template>
+</table>

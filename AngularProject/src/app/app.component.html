@@ -1,0 +1,46 @@
+<!-- top menu start -->
+<div class="navbar-nav ml-auto py-0">
+    <a href="#home" class="nav-item nav-link horiz active" (click)="getHomeSection()">Home</a>
+    <a href="#Posts" class="nav-item nav-link horiz" (click)="getPostsSection()">Posts</a>
+    <a href="#Gallery" class="nav-item nav-link horiz" (click)="getPhotosSection()">Gallery</a>
+    <a href="#Contactus" class="nav-item nav-link horiz" (click)="getContactUsSection()">Contact us</a>
+</div>
+<!-- top menu end -->
+
+<div class="flex-container">
+<!-- left menu start -->
+<div class="navbar-nav ml-auto py-0 flex-child">
+    <a href="#home" class="nav-item nav-link verti active" (click)="getHomeSection()">Home</a>
+    <a href="#Posts" class="nav-item nav-link verti" (click)="getPostsSection()">Posts</a>
+    <a href="#Gallery" class="nav-item nav-link verti" (click)="getPhotosSection()">Gallery</a>
+    <a href="#Contactus" class="nav-item nav-link verti" (click)="getContactUsSection()">Contact us</a>
+<!-- left menu end -->
+
+<div id="mainSection" class="flex-child" [style.background-color]="getMainBackColor()">
+    <div class="flex-container">
+        <div class="">
+            <div id="posts" *ngIf="showPosts">
+                <app-posts [sourceBtn]="(btnClickedEnum)"></app-posts>
+            </div>
+        </div>
+        <div class="flex-child">
+            <div id="photos" *ngIf="showPhotos">
+                <app-photos [sourceBtn]="(btnClickedEnum)"></app-photos>
+            </div>
+        </div>
+        <div id="contactUsParent" *ngIf="showContactUs" class="flex-child">
+            <app-contactus [sourceBtn]="(btnClickedEnum)"></app-contactus>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- footer start -->
+<div class="navbar-nav ml-auto py-0">
+    <a href="#home" class="nav-item nav-link horiz active" (click)="getHomeSection()">Home</a>
+    <a href="#Posts" class="nav-item nav-link horiz" (click)="getPostsSection()">Posts</a>
+    <a href="#Gallery" class="nav-item nav-link horiz" (click)="getPhotosSection()">Gallery</a>
+    <a href="#Contactus" class="nav-item nav-link horiz" (click)="getContactUsSection()">Contact us</a>
+</div>
+<!-- footer end -->

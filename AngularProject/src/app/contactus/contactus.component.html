@@ -1,0 +1,90 @@
+<form [formGroup]="contactusForm" (ngSubmit)="onSubmit()"> 
+    <div class="container-float">
+        <label for="fullName">
+      Full Name
+    </label>
+    <input id="fullName" type="text"  formControlName="fullName">
+    <div class="floatdiv" *ngIf="contactusForm.get('fullName')?.valid">
+        <img class="markIcon"  src="{{contactusForm.get('vMarkIconUrl')?.value}}"/>
+    </div>
+</div>
+    <div class="container-float">
+        <label for="email">
+          Email Address
+        </label>
+        <input id="email" type="email" name="email" formControlName="email">
+        <div *ngIf="!contactusForm.get('email')?.valid && (contactusForm.get('email')?.dirty ||contactusForm.get('email')?.touched)">
+            <div *ngIf="!contactusForm.get('email')?.valid">
+              invalid email ... please imput valid email, like 'guy@guy.guy'
+            </div>
+          </div>
+          <div class="floatdiv" *ngIf="contactusForm.get('email')?.valid">
+            <img class="markIcon"  src="{{contactusForm.get('vMarkIconUrl')?.value}}"/>
+          </div>
+      </div>
+    <div class="container-float">
+        <label for="phoneNumber">
+          Phone Number
+        </label>
+        <input id="phoneNumber" type="text" formControlName="phoneNumber">
+        <div *ngIf="!contactusForm.get('phoneNumber')?.valid && (contactusForm.get('phoneNumber')?.dirty ||contactusForm.get('phoneNumber')?.touched)">
+            <div *ngIf="!contactusForm.get('phoneNumber')?.valid">
+              invalid Ukrain syntax phone number ... please imput valid number, like '+380123456789'
+            </div>
+          </div>
+          <div class="flex-child" class="floatdiv" *ngIf="contactusForm.get('phoneNumber')?.valid">
+            <img class="markIcon"  src="{{contactusForm.get('vMarkIconUrl')?.value}}"/>
+        </div>
+      </div>
+    
+    <button class="button" type="submit" [disabled]="!contactusForm.valid">Submit</button>
+</form>
+
+<!-- <form [formGroup]="contactusForm" (ngSubmit)="onSubmit()"> 
+        <label for="fullName">
+          Full Name
+        </label>
+        <input id="fullName" type="text" [contactusForm.fullName]>
+        <img [hidden]="!contactusForm.get('fullName')?.valid" src="https://www.dreamstime.com/green-tick-icon-vector-symbol-checkmark-isolated-white-background-checked-correct-choice-sign-check-mark-checkbox-pictogram-image145926443"/>
+    
+      <div>
+        <label for="email">
+          Email Address
+        </label>
+        <input id="email" type="email" name="email" formControlName="email" ngModel email>
+        <div *ngIf="!contactusForm.get('email')?.valid && (contactusForm.get('email')?.dirty ||contactusForm.get('email')?.touched)">
+            <div *ngIf="!contactusForm.get('email')?.valid">
+              invalid email ... please imput valid email, like 'guy@guy.guy'
+            </div>
+          </div>
+      </div>
+
+      <div>
+        <label for="phoneNumber">
+          Phone Number
+        </label>
+        <input id="phoneNumber" type="text" formControlName="phoneNumber">
+        <div *ngIf="!contactusForm.get('phoneNumber')?.valid && (contactusForm.get('phoneNumber')?.dirty ||contactusForm.get('phoneNumber')?.touched)">
+            <div *ngIf="!contactusForm.get('phoneNumber')?.valid">
+              invalid Ukrain syntax phone number ... please imput valid number, like '+380123456789'
+            </div>
+          </div>
+      </div>
+    
+    <button class="button" type="submit" [disabled]="!contactusForm.valid">Submit</button>
+  </form>
+  <div style="background-color: blue;">contact us</div>
+  <div style="float: right; width:50%;">
+ 
+    <h3>Form Status</h3>
+    <b>valid : </b>{{contactusForm.valid}}
+    <br/><b>invalid : </b>{{contactusForm.invalid}}
+    <br/><b>touched : </b>{{contactusForm.touched}}
+    <br/><b>untouched : </b>{{contactusForm.untouched}}
+    <br/><b>pristine : </b>{{contactusForm.pristine}}
+    <br/><b>dirty : </b>{{contactusForm.dirty}}
+    <br/><b>disabled : </b>{{contactusForm.disabled}}
+    <br/><b>enabled : </b>{{contactusForm.enabled}}
+   
+    <h3>Form Value</h3>
+    {{contactusForm.value |json}} -->
