@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 export class CacheService {
     private apiUrl = environment.apiPostUrl;
   
-    cache?: DictionaryFinonex[] = [];
+    cache?: DictionaryCache[] = [];
 
     constructor(private http:HttpClient) { }
 
@@ -21,7 +21,7 @@ export class CacheService {
             return obj.key === urlReq;
           });
         if (!first) {
-          console.log("did not find the request in cache ... will use url: " + urlReq);
+          // Could not find in cache
           console.log(this.cache);
           this.cache?.push({key: url, value: this.http.get(urlReq).pipe(
             map((value: typeof T) => {
@@ -34,7 +34,6 @@ export class CacheService {
             shareReplay(1)
           )}
           );
-          console.log(this.cache?.length);
           first = this.cache?.find((obj) => {
             return obj.key === urlReq;
           });
@@ -43,7 +42,7 @@ export class CacheService {
       }
 }
 
-interface DictionaryFinonex {
+interface DictionaryCache {
     key: string,
     value?: Observable<any>
 }

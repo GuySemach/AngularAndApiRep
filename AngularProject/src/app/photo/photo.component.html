@@ -1,10 +1,11 @@
-<div class="flex-container" >
-    <div *ngIf="sourceBtn===enumBtn; else notAllRecords" >
+<div class="flex-container">
+    <div class="flex-container" *ngIf="sourceBtn===enumBtn; else notAllRecords" >
         <div id="photos" *ngFor="let photo of photos" (click)="getAlbumById(photo.albumId)" class="flex-child-photo need-curser">
             <img src="{{photo.thumbnailUrl}}" />
         </div> 
     </div>
-    <ng-template #notAllRecords>
+    <!-- using template that will present only first 10 results (parameter) -->
+    <ng-template id="flex-container" #notAllRecords>
         <div id="photos" *ngFor="let photo of photos | slice:0:maxRowPerPage;" (click)="getAlbumById(photo.albumId)" class="flex-child-photo need-curser">
             <img src="{{photo.thumbnailUrl}}" />
         </div> 

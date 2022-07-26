@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IPost } from '../interface/ipost';
-import {PostService} from '../post.service';
+import {PostService} from '../services/post.service';
 import { buttonClickedEnum } from '../app.enums';
 import { environment } from 'src/environments/environment';
 

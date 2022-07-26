@@ -1,0 +1,6 @@
+<div id="containerMenu" [ngClass]="{'horizontal': step === 'step1', 'vertical' : step === 'step2' }">
+    <div class='menuBtn' (click)="getHomeSection()"> Home :: </div>
+    <div class='menuBtn' (click)="getPostsSection()"> Posts :: </div>
+    <div class='menuBtn' (click)="getPhotosSection()"> Gallery :: </div>
+    <div class='menuBtn' (click)="getContactUsSection()"> Contact us</div>
+</div>

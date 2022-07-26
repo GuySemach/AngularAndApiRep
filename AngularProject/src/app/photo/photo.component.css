@@ -8,16 +8,17 @@
 
 }
 
-.flex-container > div {
-    /* flex: -0.1; */
-    /* background-color: #ee4242; */
+/* .flex-container > div {
     width: 180px;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-} 
+}  */
 
 .need-curser {
     cursor: pointer;
 }
+
+
+  

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IPost } from './interface/ipost';
 import { IPhoto } from './interface/iphoto';
-import {PostService} from './post.service';
-import {PhotoService} from './photo.service';
+import {PostService} from './services/post.service';
+import {PhotoService} from './services/photo.service';
 import { buttonClickedEnum } from './app.enums';
 
 @Component({
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
 
   btnClickedEnum:buttonClickedEnum = buttonClickedEnum.home;
 
-  title = 'FirstProject';
+  title = 'AngularProject';
   someValue: string="";
   posts: IPost[] = [];
   photos: IPhoto[] = [];
@@ -37,17 +37,17 @@ export class AppComponent implements OnInit {
   getMainBackColor(){
       let color = 'red';
       if (this.btnClickedEnum == buttonClickedEnum.home) {
-        color = 'red';
+        color = 'green';
       } else if (this.btnClickedEnum == buttonClickedEnum.posts) {
-          color = 'green';
+          color = 'rgb(185, 105, 105)'; // kind of red color
       } else if (this.btnClickedEnum == buttonClickedEnum.photos) {
         color = 'yellow';
       } else if (this.btnClickedEnum == buttonClickedEnum.contactUs) {
         color = 'lightblue';
       }
       return color;
-    
   }
+
   getHomeSection(){
     this.btnClickedEnum = buttonClickedEnum.home;
     this.showPosts = true;

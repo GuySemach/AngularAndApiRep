@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IPhoto } from '../interface/iphoto';
-import {PhotoService} from '../photo.service';
+import {PhotoService} from '../services/photo.service';
 import { buttonClickedEnum } from '../app.enums';
 import { environment } from 'src/environments/environment';
 
@@ -25,14 +25,12 @@ export class PhotoComponent implements OnInit {
 
   onGetPhotos(): void {
     this.photoService.getPhotos().subscribe(data=>{
-      console.log("Done retrieving Photos");
       this.photos = data;
     });
   }
 
   onGetPhotosByAlbumId(albumId: number): void {
     this.photoService.getAlbumById(albumId).subscribe(data=>{
-      console.log("Done retrieving Photos by AlbumId");
       this.photos = data;
     });
   }

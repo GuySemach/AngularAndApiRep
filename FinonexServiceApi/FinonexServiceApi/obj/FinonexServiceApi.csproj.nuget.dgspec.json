@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Personal\\Guy\\Coding\\Projects\\InterviewFinonexWebAPI\\FinonexServiceApi\\FinonexServiceApi\\FinonexServiceApi.csproj": {}
+    "C:\\Personal\\Guy\\Coding\\Gitub\\Repos\\AngularAndApiRep\\FinonexServiceApi\\FinonexServiceApi\\FinonexServiceApi.csproj": {}
   },
   "projects": {
-    "C:\\Personal\\Guy\\Coding\\Projects\\InterviewFinonexWebAPI\\FinonexServiceApi\\FinonexServiceApi\\FinonexServiceApi.csproj": {
+    "C:\\Personal\\Guy\\Coding\\Gitub\\Repos\\AngularAndApiRep\\FinonexServiceApi\\FinonexServiceApi\\FinonexServiceApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Personal\\Guy\\Coding\\Projects\\InterviewFinonexWebAPI\\FinonexServiceApi\\FinonexServiceApi\\FinonexServiceApi.csproj",
+        "projectUniqueName": "C:\\Personal\\Guy\\Coding\\Gitub\\Repos\\AngularAndApiRep\\FinonexServiceApi\\FinonexServiceApi\\FinonexServiceApi.csproj",
         "projectName": "FinonexServiceApi",
-        "projectPath": "C:\\Personal\\Guy\\Coding\\Projects\\InterviewFinonexWebAPI\\FinonexServiceApi\\FinonexServiceApi\\FinonexServiceApi.csproj",
+        "projectPath": "C:\\Personal\\Guy\\Coding\\Gitub\\Repos\\AngularAndApiRep\\FinonexServiceApi\\FinonexServiceApi\\FinonexServiceApi.csproj",
         "packagesPath": "C:\\Users\\guyse\\.nuget\\packages\\",
-        "outputPath": "C:\\Personal\\Guy\\Coding\\Projects\\InterviewFinonexWebAPI\\FinonexServiceApi\\FinonexServiceApi\\obj\\",
+        "outputPath": "C:\\Personal\\Guy\\Coding\\Gitub\\Repos\\AngularAndApiRep\\FinonexServiceApi\\FinonexServiceApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\guyse\\AppData\\Roaming\\NuGet\\NuGet.Config",

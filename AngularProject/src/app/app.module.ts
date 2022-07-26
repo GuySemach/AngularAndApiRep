@@ -10,13 +10,15 @@ import { PostComponent } from './post/post.component';
 import { PhotoComponent } from './photo/photo.component';
 import { CommonModule } from '@angular/common';
 import { ContactusComponent } from './contactus/contactus.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostComponent,
     PhotoComponent,
-    ContactusComponent
+    ContactusComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

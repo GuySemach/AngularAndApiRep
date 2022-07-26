@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CCmarYUCFSTEJRGRM5TwceqAUEaPxwd4t+KanAredMDPttwn4KiMdoZlOs54WCh3jLZPDZuE9e/ZnCGTJ9pWkw==",
+  "dgSpecHash": "JJcmrz8Lv8b9nL7ZgSt8eBZE6mrwhJuPJjEyWAhr+yMm5YF/Yv2j7Je3Vtx/L9y3zq56HrZQZP5tu7l+LlprYQ==",
   "success": true,
-  "projectFilePath": "C:\\Personal\\Guy\\Coding\\Projects\\InterviewFinonexWebAPI\\FinonexServiceApi\\FinonexServiceApi\\FinonexServiceApi.csproj",
+  "projectFilePath": "C:\\Personal\\Guy\\Coding\\Gitub\\Repos\\AngularAndApiRep\\FinonexServiceApi\\FinonexServiceApi\\FinonexServiceApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guyse\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\guyse\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
