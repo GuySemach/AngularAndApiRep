@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gZ+oxUl9lt6sy3iJGac2D7Tc2dPnRSgEonUe9A2JVFo=",
+  "Source": "FinonexServiceApi",
+  "BasePath": "_content/FinonexServiceApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
