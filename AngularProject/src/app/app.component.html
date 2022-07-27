@@ -1,11 +1,11 @@
 <div id="topMenu">
 	<div > Top menu:: </div>
-	<app-menu></app-menu>
+    <app-menu [isLeftMenu] = false></app-menu>
 </div>
 <div id="centerPage">
 	<div id="leftMenu">
         <div>Left menu</div>
-        <app-menu></app-menu>
+        <app-menu [isLeftMenu] = "true"></app-menu>
     </div>
 
   <div id="mainContent" [style.background-color]="getMainBackColor()">
@@ -23,5 +23,5 @@
 
 <div id="buttomMenu">
   <div>Buttom menu :: </div>
-  <app-menu></app-menu>
+  <app-menu [isLeftMenu] = "false"></app-menu>
  </div>

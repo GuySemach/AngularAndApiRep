@@ -1,4 +1,4 @@
-<div id="containerMenu" [ngClass]="{'horizontal': step === 'step1', 'vertical' : step === 'step2' }">
+<div id="containerMenu" [ngClass]="{'vertical': isLeftMenu, 'horizontal' : !isLeftMenu }">
     <div class='menuBtn' (click)="getHomeSection()"> Home :: </div>
     <div class='menuBtn' (click)="getPostsSection()"> Posts :: </div>
     <div class='menuBtn' (click)="getPhotosSection()"> Gallery :: </div>

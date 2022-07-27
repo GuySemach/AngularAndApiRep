@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { buttonClickedEnum } from '../app.enums';
 import { AppComponent } from '../app.component';
 
@@ -7,12 +7,17 @@ import { AppComponent } from '../app.component';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
+
 export class MenuComponent implements OnInit {
   btnClickedEnum:buttonClickedEnum = buttonClickedEnum.home;
+
+  @Input() 
+  isLeftMenu: boolean=false;
 
   constructor(
     private appComponent: AppComponent
   ) { }
+
 
   ngOnInit(): void {
   }

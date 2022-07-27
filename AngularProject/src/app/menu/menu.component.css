@@ -56,6 +56,16 @@
       background-color: green;
       text-align:center;
   }
+
+  .horizontal {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .vertical {
+    display: flex;
+    flex-direction: column;
+  }
   
   /* ----------- */
   
