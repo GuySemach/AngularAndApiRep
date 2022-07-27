@@ -7,7 +7,12 @@
         {
             _dac = dac;
         }
-        public Task<IEnumerable<Post>> GetPosts() =>
-                        _dac.GetData<Post>("/posts");
+        public async Task<IEnumerable<Post>> GetPosts()
+        {
+            // I guess when you asked for top 10 posts, you mean that it should be order it descending by the postId. 
+            var results = await _dac.GetData<Post>("/posts");
+            return results.OrderByDescending(x=>x.id).ToList();
+        }
+
     }
 }
